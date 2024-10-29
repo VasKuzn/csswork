@@ -5,3 +5,18 @@ h1 {
 p {
     color: brown;
 }
+
+#header {
+    background-color: yellow;
+}
+
+.cl {
+    background-color: blue;
+}
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    padding: 5px;
+    text-align: center;
+}
