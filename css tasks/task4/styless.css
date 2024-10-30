@@ -10,4 +10,10 @@ h1,
 h2 {
     font-family: 'Times New Roman', Times, serif;
     color: white;
+    font-variant: small-caps;
+    text-align: center;
+}
+
+body {
+    background: linear-gradient(to left, white, lightblue, white);
 }
