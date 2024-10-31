@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .circle {
+            width: 80px;
+            height: 80px;
+            background-color: aqua;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            transition: 1.5s ease-in-out;
+        }
+
+        .rectangle {
+            width: 200px;
+            height: 100px;
+            background-color: blue;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            transition: 1.5s ease-in-out;
+        }
+
+        .circle:hover {
+            background-color: chocolate;
+            transform: translate(-100%, -50%);
+        }
+
+        .rectangle:hover {
+            box-shadow: 10px 5px 5px grey;
+            transform: translate(-45%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="circle"></div>
+    <div class="rectangle"></div>
+
+</body>
+
+</html>
