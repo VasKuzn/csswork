@@ -1,0 +1,6 @@
+bootstrap.com - фреймворк с шаблонами, оч крутой и удобный
+https://developer.mozilla.org/ru/docs/Web/CSS/CSS_media_queries/Using_media_queries - медиавыражения, круто классно для адаптивности
+display : flex - это для крутого флекса интерфейса
+очередность - padding,border,margin
+float - обтекание текста
+display: inline -str, block - блочный, inline-block - строчно блочный
