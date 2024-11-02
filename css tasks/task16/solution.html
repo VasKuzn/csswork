@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap">
+    <title>Подписка на закрытый канал</title>
+
+    <!-- 😉 Помните, что ваше решение такое же хорошее, как и моё, до тех пор, пока оно вам нравится -->
+
+    <!-- Стили для элементов страницы -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            /* Используется шрифт Montserrat для текста внутри body */
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+            background: radial-gradient(circle, #736580, #635157)
+        }
+
+        .card {
+            /* Цвет фона карточки */
+            display: flex;
+            border: 3px solid black;
+            border-radius: 10%;
+            padding: 5px;
+            margin: 5px;
+            z-index: 1;
+            box-shadow: 0 5px 5px;
+            flex-direction: column;
+            align-items: center;
+            height: 250px;
+            width: 200px;
+        }
+
+        #card1 {
+            background: linear-gradient(to left, aqua, #b1dedd);
+        }
+
+        #card1 .price {
+            background: radial-gradient(circle, #736580, #635157);
+            border: 1px solid black;
+        }
+
+        #card2 {
+            background: linear-gradient(to left, #91cf97, #c8deb1);
+        }
+
+        #card2 .price {
+            background: radial-gradient(circle, #736580, #635157);
+            border: 1px solid black;
+        }
+
+        #card3 {
+            background: linear-gradient(to left, #cf91b1, #d16b8d);
+        }
+
+        #card3 .price {
+            background: radial-gradient(circle, #736580, #635157);
+            border: 1px solid black;
+        }
+
+        .card h2 {
+            /* Внутренний отступ для заголовка h2 */
+            margin: 10px;
+            text-align: center;
+        }
+
+
+        .price {
+            /* Размер шрифта цены */
+            font-size: 20px;
+            /* Жирное начертание для цены */
+            font-weight: bold;
+            text-align: center;
+            color: cornsilk;
+            border-radius: 5px;
+            ;
+        }
+
+
+        .button {
+            /* Цвет фона кнопки */
+            background-color: #4CAF50;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            font-size: 16px;
+            padding: 5px 20px;
+            margin: 5 20px;
+            border-radius: 15px;
+            transition: background-color 0.5s ease;
+        }
+
+        .button:hover {
+            /* Изменение цвета фона кнопки при наведении */
+            background-color: #37873b;
+        }
+
+        ul {
+            /* Удаление маркеров списка */
+            list-style: none;
+            margin: 0 0 10px 0;
+            text-align: left;
+            padding: 0;
+        }
+
+        li {
+            /* Внешний отступ элементов списка */
+            margin: 5px 0;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                /* Изменение направления отображения элементов при ширине экрана до 768px */
+                flex-direction: column;
+                /* Выравнивание элементов по центру при изменении направления */
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card" id="card1">
+        <h2>Рыцарь</h2>
+        <div class="price">&#8381; 199/месяц</div>
+        <ul>
+            <li>✅ Феод</li>
+            <li>❎ Набор войска</li>
+            <li>❎ Независимая политика</li>
+        </ul>
+        <a href="#" class="button">Подписаться</a>
+    </div>
+
+    <div class="card" id="card2">
+        <h2>Граф</h2>
+        <div class="price">&#8381; 299/месяц</div>
+        <ul>
+            <li>✅ Феод</li>
+            <li>✅ Набор войска</li>
+            <li>❎ Независимая политика</li>
+        </ul>
+        <a href="#" class="button">Подписаться</a>
+    </div>
+
+    <div class="card" id="card3">
+        <h2>Герцог</h2>
+        <div class="price">&#8381; 599/месяц</div>
+        <ul>
+            <li>✅ Феод</li>
+            <li>✅ Набор войска</li>
+            <li>✅ Независимая политика</li>
+        </ul>
+        <a href="#" class="button">Подписаться</a>
+    </div>
+
+</body>
+
+</html>
